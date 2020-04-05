@@ -1,7 +1,31 @@
+/* DESKTOP STYLES*/
 .card-list {
+  width: 85vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 25px;
+}
+
+/* TABLET STYLES */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .card-list {
     width: 85vw;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
+  }
+}
+
+/* MOBILE STYLES */
+@media screen and (max-width: 768px) {
+  .card-list {
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    margin-bottom: 25px;
+  }
 }
